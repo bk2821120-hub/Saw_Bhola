@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prrtfilio.css">
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://cdn-icons-png.flaticon.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+    <div class="navbar">
+        <a href="#" class="logo"><img src="E:\portfilio\pic.jpeg" alt="">
+
+        </a>
+        <ul>
+            <li><a href="#about" class="activity">About</a></li>
+            <li><a href="E:\portfilio\project_page.html">Project</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </div>
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <div class="home">
+        <div class="home-info">
+    
+         
+            <h1 class="three-d ">Saw Bhola Dilchand</h1>
+            <br>
+            <br>
+        
+            <h2>I Am Student And Currently learning <br> Machine Learning</h2>
+
+            <p>
+                Data analysis is the process of collecting, cleaning, transforming, 
+                and interpreting data to discover useful insights that support decision-making. <br> It helps identify patterns,
+                 trends, and relationships within the data using statistical methods, visualization tools, <br>and analytical
+                  techniques.</p>
+                  <div class="dtn-sci">
+                    <a href="" class="dtn">dowmload CV</a>
+                    <div class="sci">
+                    <a href="https://www.linkedin.com/in/bhola-kumar-23993431b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/anurajgupta8347?igsh=ZzFuY3p6cTVrNGR6"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/@Bholakumar-n3n4v"><i class="bi bi-youtube"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VaAPOD7GzzKWnPURL83B"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                  </div>
+        </div>
+    </div>
+    
+    </header>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I am Bhola Dilchand, a passionate student currently learning Machine Learning. 
+        I enjoy exploring data, building models, and creating insightful visualizations. 
+        I am curious, eager to learn, and constantly improving my skills to solve real-world problems.
+    </p>
+</section>
+<section id="skill">
+    <h2>Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>NumPy</li>
+        <li>Pandas</li>
+        <li>Plotly</li>
+        <li>Matplotlib</li>
+        <li>Seaborn</li>
+        <li>Power BI</li>
+    </ul>
+</section>
+<section id="contact">
+    <h2>Contact</h2>
+    <ul>
+        <li>Name:Saw Bhola Dilchand</li>
+        <li>Age: 19</li>
+        <li>Date of Birth: 12-mar-2007</li>
+        <li>Mobile: +91-9905845253</li>
+        <li>Email: bk2821120@gemail.com</li>
+        <li>kandivali poisar mumbai maharashtra 400101</li>
+    </ul>
+</section>
+<script>
+    const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".navbar ul li a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 160;
+        if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+
+</script>
+</body>
+</html>
